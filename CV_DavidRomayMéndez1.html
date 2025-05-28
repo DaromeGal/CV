@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV de David Romay Méndez</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #eef2f3;
+        color: #333;
+      }
+
+      .container {
+        max-width: 960px;
+        margin: 40px auto;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0;
+        color: #2c3e50;
+      }
+
+      h2 {
+        color: #4b7bec;
+        margin-top: 40px;
+        border-left: 6px solid #4b7bec;
+        padding-left: 10px;
+      }
+
+      p,
+      li {
+        font-size: 1.05rem;
+        line-height: 1.6;
+      }
+
+      .highlight {
+        color: #20bf6b;
+        font-weight: bold;
+      }
+
+      .section {
+        margin-bottom: 30px;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      .label {
+        font-weight: bold;
+        color: #555;
+      }
+
+      .skills-bar {
+        margin: 10px 0;
+      }
+
+      .bar {
+        background: #dcdde1;
+        border-radius: 20px;
+        overflow: hidden;
+        height: 20px;
+        margin-top: 5px;
+      }
+
+      .bar-fill {
+        height: 100%;
+        background: linear-gradient(to right, #4b7bec, #00cec9);
+        width: 0%;
+        animation: fill 2s ease-in-out forwards;
+      }
+
+      @keyframes fill {
+        to {
+          width: var(--level);
+        }
+      }
+
+      .footer {
+        text-align: center;
+        font-size: 0.9rem;
+        color: #777;
+        margin-top: 40px;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          padding: 20px;
+        }
+      }
+
+      @media print {
+        .container {
+          box-shadow: none !important;
+          border-radius: 0 !important;
+        }
+      }
+
+      .container {
+        page-break-inside: avoid;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="cv-content">
+      <h1>David Romay Méndez</h1>
+      <p><em class="highlight">Desarrollador en formación</em></p>
+
+      <div class="section">
+        <h2>Perfil Personal</h2>
+        <p>
+          Soy un joven desarrollador en formación, apasionado por la tecnología
+          y la programación, con ganas de aprender y crecer profesionalmente en
+          el desarrollo de aplicaciones multiplataforma. Soy
+          <span class="highlight">creativo, animado</span> y tengo un fuerte
+          espíritu de equipo. Mi experiencia personal me ha enseñado a gestionar
+          situaciones difíciles con resiliencia y perseverancia. Me enfoco en
+          consolidar mis habilidades en Java, SQL y desarrollo backend, siempre
+          con ganas de aportar valor en proyectos reales y colaborar con
+          compañeros.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Datos de Contacto</h2>
+        <p>
+          <span class="label">Dirección:</span> Rúa Zamora, 102 – 3ºF, 36211
+          Vigo, Pontevedra
+        </p>
+        <p><span class="label">Teléfono:</span> 633 09 11 51</p>
+        <p><span class="label">Email:</span> dromaymendez@gmail.com</p>
+      </div>
+
+      <div class="section">
+        <h2>Formación Académica</h2>
+        <ul>
+          <li><strong>DAM</strong> – CEBEM, Vigo (2024 - 2026, en curso)</li>
+          <li>Bachillerato – IES de Vilalonga (2024)</li>
+          <li>ESO – IES de Dena (2022)</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Habilidades Personales</h2>
+        <ul>
+          <li>Creatividad</li>
+          <li>Trabajo en equipo</li>
+          <li>Escucha activa</li>
+          <li>Comunicación</li>
+          <li>Ganas de aprender</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Habilidades Técnicas</h2>
+        <div class="skills-bar">
+          <p>Programación en Java</p>
+          <div class="bar">
+            <div class="bar-fill" style="--level: 80%"></div>
+          </div>
+          <p>Gestión de bases de datos SQL</p>
+          <div class="bar">
+            <div class="bar-fill" style="--level: 90%"></div>
+          </div>
+          <p>Diseño web con HTML</p>
+          <div class="bar">
+            <div class="bar-fill" style="--level: 90%"></div>
+          </div>
+          <p>Control de versiones con Git</p>
+          <div class="bar">
+            <div class="bar-fill" style="--level: 90%"></div>
+          </div>
+          <p>Desarrollo con Spring Boot</p>
+          <div class="bar">
+            <div class="bar-fill" style="--level: 65%"></div>
+          </div>
+          <p>Bases de datos NoSQL</p>
+          <div class="bar">
+            <div class="bar-fill" style="--level: 60%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Idiomas</h2>
+        <ul>
+          <li>Gallego: Nativo</li>
+          <li>Español: Nativo</li>
+          <li>Inglés: Fluido (sin titulación)</li>
+        </ul>
+      </div>
+
+      <div class="footer">CV diseñado por David Romay Méndez · 2025</div>
+    </div>
+
+    <script>
+      // Animar las barras al cargar la página
+      window.addEventListener("load", () => {
+        document.querySelectorAll(".bar-fill").forEach((bar) => {
+          bar.style.width = "0%";
+          bar.style.animation = "fill 2s ease-in-out forwards";
+        });
+      });
+    </script>
+  </body>
+</html>
